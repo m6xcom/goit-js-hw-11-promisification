@@ -18,8 +18,8 @@ const makeTransaction = (transaction) => {
   return promise;
 };
 
-const logSuccess = (obj) => {
-  console.log(`Transaction ${obj.id} processed in ${obj.time}ms`);
+const logSuccess = ({ id, time }) => {
+  console.log(`Transaction ${id} processed in ${time}ms`);
 };
 
 const logError = (id) => {
